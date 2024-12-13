@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.legend-container {
+  height: 300px;
+  width: 400px;
+  position: relative;
+  border: 5px solid #61412d;
+  justify-content: center;
+  background-color: white;
+  padding: 50px;
+}
+
+p {
+  color: black;
+  font-size: medium;
+  margin-bottom: 20px;
+}
+
+#birth-year {
+  height: 30px;
+  width: 100px;
+  border: solid 2px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  height: 30px;
+  width: 100%;
+}
+
+.wrapper {
+  height: 300px;
+  width: 250px;
+  position: relative;
+  border: 5px solid #61412d;
+  perspective: 1000px;
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.door {
+  background-color: #61412d;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#left-door {
+  top: 0;
+  left: 0;
+  border-right: 1px solid black;
+  transition: transform 0.5s;
+  transform-origin: left;
+}
+
+#right-door {
+  top: 0;
+  right: 0;
+  border-left: 1px solid black;
+  transition: transform 0.5s;
+  transform-origin: right;
+}
+
+.shape {
+  border: 4px solid black;
+  width: 100px;
+  height: 130px;
+}
+
+.knob {
+  background-color: #d7dade;
+  width: 10px;
+  height: 50px;
+  position: absolute;
+}
+
+#left-knob {
+  top: 50%;
+  right: 10px;
+}
+
+#right-knob {
+  top: 50%;
+  left: 10px;
+}
+
+/* Doorr Swing Effect */
+.wrapper:hover #left-door {
+  transform: rotateY(-140deg);
+}
+
+.wrapper:hover #right-door {
+  transform: rotateY(140deg);
+}

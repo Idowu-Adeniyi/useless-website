@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reveal the Surprise</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <img
+        id="baby1"
+        src="images/dancingbaby1.gif"
+        alt="Dancing Baby1"
+        hidden
+      />
+      <img
+        id="baby2"
+        src="images/dancingbaby2.gif"
+        alt="Dancing Baby2"
+        hidden
+      />
+      <img
+        id="baby3"
+        src="images/dancingbaby3.gif"
+        alt="Dancing Baby3"
+        hidden
+      />
+      <img
+        id="baby4"
+        src="images/dancingbaby4.gif"
+        alt="Dancing Baby4"
+        hidden
+      />
+      <img
+        id="baby5"
+        src="images/dancingbaby5.gif"
+        alt="Dancing Baby5"
+        hidden
+      />
+      <div id="left-door" class="door">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div id="left-knob" class="knob"></div>
+      </div>
+      <div id="right-door" class="door">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div id="right-knob" class="knob"></div>
+      </div>
+    </div>
+
+    <div class="legend-container">
+      <p>FACE YOUR FEAR (Terrifying Image) 18+</p>
+      <p>You must be 18 years old and above to view</p>
+      <div class="input_birth-year">
+        <label for="name">Enter Birth Year:</label>
+        <input type="text" class="user" id="birth-year" />
+        <p>
+          <strong><span id="input-result"></span></strong>
+        </p>
+      </div>
+      <div class="btn-btn">
+        <button type="button" class="btn">Access Door</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
